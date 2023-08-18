@@ -1,0 +1,13 @@
+C:\Users\springnuance\AppData\Local\Programs\Python\Python38\python.exe -m venv venv
+.\venv\Scripts\activate
+
+# Open Powershell as Administrator to change execution policy
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+# update pip
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+# Run the app
+.\venv\Scripts\activate
+python DRAGen.py
